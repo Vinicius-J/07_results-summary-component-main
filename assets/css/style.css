@@ -23,7 +23,86 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Hanken Grotesk", serif;
+    color: var(--Light-lavender);
 }
 html{
     font-size: 62.5%;
+}
+p{
+    font-size: 1.8rem;
+}
+body{
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+.container{
+    width: 75rem;
+    height: 55rem;
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--White);
+    box-shadow: 0.5rem 2rem 4rem rgba(0,0,0,0.1);
+    border-radius: 4rem;
+}
+
+.card-result{
+    background-image: linear-gradient(180deg, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    width: 50%;
+    height: 100%;
+    border-radius: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.card-result h2{
+    font-size: 3rem;
+    padding: 2rem;
+    color: var(--White);
+}
+
+.card-result .points{
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg, var(--Violet-blue-circle), var(--Persian-blue-circle));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-result .points span#points-mark{
+    font-size: 8rem;
+    font-weight: bold;
+    color: var(--White);
+}
+.card-summary{
+    width: 50%;
+    height: 100%;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    color: var(--Persian-blue-circle);
+}
+
+.card-summary h1{
+    color: var(--Dark-gray-blue);
+}
+
+.itens-points{
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: var(--Green-teal);
+    display: flex;
 }
