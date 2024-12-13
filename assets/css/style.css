@@ -34,6 +34,7 @@ p{
 body{
     min-height: 100vh;
     justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
@@ -42,8 +43,8 @@ h1{
     margin-bottom: 4rem;
 }
 .container{
-    width: 75rem;
-    height: 55rem;
+    width: 65rem;
+    height: 50rem;
     display: flex;
     margin: 0 auto;
     background-color: var(--White);
@@ -99,10 +100,21 @@ h1{
     color: var(--Dark-gray-blue);
 }
 
-.itens-points{
-    padding: 1.5rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    background-color: var(--Green-teal);
-    display: flex;
+.button{
+    background-color: var(--Dark-gray-blue);
+    border: none;
+    cursor: pointer;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    color: var(--White);
+    transition: all 1s ease-in-out;
+}
+
+.button:hover{
+    background-image: linear-gradient(180deg, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    border: none;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    color: var(--White);
+    transition: all 1s ease-in-out;
 }
